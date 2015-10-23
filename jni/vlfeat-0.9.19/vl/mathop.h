@@ -262,7 +262,7 @@ VL_INLINE double
 vl_log2_d (double x)
 {
 #ifdef VL_COMPILER_GNUC
-  return __builtin_log2(x) ;
+  return __builtin_log(x) / __builtin_log(2) ; // not sure why log2() not exist
 #elif VL_COMPILER_MSC
   return log(x) / 0.693147180559945 ;
 #else
@@ -275,7 +275,7 @@ VL_INLINE float
 vl_log2_f (float x)
 {
 #ifdef VL_COMPILER_GNUC
-  return __builtin_log2f (x) ;
+  return __builtin_log(x) / __builtin_log(2); // same above
 #elif VL_COMPILER_MSC
   return logf(x) / 0.6931472F ;
 #else

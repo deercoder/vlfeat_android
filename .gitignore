@@ -1,0 +1,10 @@
+obj/
+R.txt
+*.o
+*.jar
+*.so
+*.apk
+R.java
+*.class
+lint.xml
+*.dex

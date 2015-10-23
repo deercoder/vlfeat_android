@@ -441,6 +441,13 @@ _vl_cpuid (vl_int32* info, int function)
 
 #endif
 
+/* Add by Chang, #Fix compile issue for #_vl_cpuid undefined reference
+ * One of my fix is to add this #ifdefined ... #endif macros since they
+ * have no HAS_CPUID when compiling using NDK by andriod, BUT there is still
+ * definition here, so no function about _vl_cpuid is found, what we do
+ * is to make sure that it never compiles in this case, so to make least
+ * modifcation, add the MACROs as the original code does to fit them well
+ */
 #if defined(HAS_CPUID)
 void
 _vl_x86cpu_info_init (VlX86CpuInfo *self)

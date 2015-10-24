@@ -1,6 +1,11 @@
 README
 ===
 
+## Description
+
+**vlfeat_android**: VLfeat under Andrioid, JNI/NDK with VLfeat-v0.9.19
+
+
 ## Target
 
 [VLFeat](http://www.vlfeat.org/) implements popular computer vision algorithms specializing in image understanding and local features extraction and matching. Algorithms include Fisher Vector, VLAD, SIFT, MSER, k-means, hierarchical k-means, agglomerative information bottleneck, SLIC superpixels, quick shift superpixels, large scale SVM training, and many others

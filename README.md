@@ -29,9 +29,9 @@ I tried my best to keep the source code as the same as original vlfeat code(v0.9
 
 ## System requirement
 
-VLfeat 0.9.19
-OpenCV 2.4.9
-Andriod Level 16+
+* VLfeat 0.9.19
+* OpenCV 2.4.9
+* Andriod Level 16+
 
 
 ## Some related resources

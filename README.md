@@ -13,7 +13,7 @@ README
 However, it only provides C and MATLAB interface, which means most of the users can only use them in the offline, limiting its application in PC or server. **Our target of this project is to port them into andriod platform to make it support the mobile development, especially in classification, detection and image processing**
 
 
-## What I done(VLfeat, OpenCV, Andriod)
+## What I've done(VLfeat, OpenCV, Android)
 
 There are a few steps to port all the source code to andriod, what I used here is Andriod JNI with OpenCV. I copied the source code of vlfeat, build a new JNI project that contains such source code, write the new `Andriod.mk` to build in Andriod.
 
